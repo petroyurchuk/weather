@@ -22,7 +22,7 @@ function findWheather() {
       if (data.cod === 200) {
         document.querySelector(".container").style.display = "flex";
         message.textContent = "";
-        wrapperImg.innerHTML = `<img src='http://openweathermap.org/img/w/${data.weather[0].icon}.png'>`;
+        wrapperImg.innerHTML = `<img src='https://openweathermap.org/img/w/${data.weather[0].icon}.png'>`;
         locationCity.innerHTML = `${data.name},`;
         locationCountry.innerHTML = `${data.sys.country}`;
         tempr.innerHTML = `${Math.ceil(data.main.temp)} &#8451;`;
