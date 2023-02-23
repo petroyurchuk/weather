@@ -15,7 +15,7 @@ searchBtn.addEventListener("click", findWheather);
 
 function findWheather() {
   fetch(
-    `http://api.openweathermap.org/data/2.5/weather?q=${inputCountry.value}&units=metric&APPID=5d066958a60d315387d9492393935c19 `
+    `https://api.openweathermap.org/data/2.5/weather?q=${inputCountry.value}&units=metric&APPID=5d066958a60d315387d9492393935c19`
   )
     .then((res) => res.json())
     .then((data) => {
