@@ -20,6 +20,7 @@ function findWheather() {
     .then((res) => res.json())
     .then((data) => {
       if (data.cod === 200) {
+        inputCountry.value = "";
         document.querySelector(".container").style.display = "flex";
         message.textContent = "";
         wrapperImg.innerHTML = `<img src='https://openweathermap.org/img/w/${data.weather[0].icon}.png'>`;
@@ -49,6 +50,7 @@ function findWheather() {
       } else {
         message.style.color = "red";
         message.textContent = "Please type correct name of city";
+        inputCountry.value = "";
       }
     });
 }
