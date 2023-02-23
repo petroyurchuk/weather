@@ -26,7 +26,6 @@ body {
   flex-direction: column;
   padding: 50px 20px;
   row-gap: 10px;
-  overflow: auto;
   transition: all 0.5s;
 }
 
@@ -155,5 +154,10 @@ body {
     width: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+}
+@media (max-height: 600px) {
+  .container {
+    overflow: auto;
   }
 }/*# sourceMappingURL=style.css.map */
