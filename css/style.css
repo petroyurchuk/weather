@@ -149,11 +149,14 @@ body {
   transform: translateY(-4px);
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .container {
     width: 300px;
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  .scale {
+    max-width: 230px;
   }
 }
 @media (max-height: 600px) {
